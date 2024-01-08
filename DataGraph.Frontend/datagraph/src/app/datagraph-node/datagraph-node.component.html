@@ -1,0 +1,7 @@
+<div class="datagraph-node" id="{{node.name}}">
+    <div class="datagraph-node-title">{{ node.name }}</div>
+    <div class="datagraph-node-primary-key">{{ node.primaryKeyName }}</div>
+    <div class="datagraph-node-foreign-keys">
+        <div *ngFor="let key of node.foreignKeyFields">{{ key }}</div>
+    </div>
+</div>

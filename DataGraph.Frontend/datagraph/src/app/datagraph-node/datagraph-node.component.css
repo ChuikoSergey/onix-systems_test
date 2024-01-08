@@ -1,0 +1,28 @@
+.datagraph-node {
+    width: 10em;
+    border-radius: 25px;
+    overflow: hidden;
+    border: solid 2px #0033cc;
+    
+}
+
+.datagraph-node > * {
+    padding: 5px;
+    text-align: center;
+}
+
+.datagraph-node-title {
+    background-color: #0033cc;
+    color:  #ffffff
+}
+
+.datagraph-node-primary-key {
+    background-color:  #ffffff;
+    color: #0033cc;
+    border-bottom: solid 2px #0033cc ;
+}
+
+.datagraph-node-foreign-keys {
+    background-color:  #ffffff;
+    color: #cc00cc;
+}

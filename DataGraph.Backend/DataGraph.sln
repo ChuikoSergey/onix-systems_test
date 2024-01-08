@@ -1,0 +1,40 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31903.59
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataGraph.Core", "DataGraph.Core\DataGraph.Core.csproj", "{B140E658-5173-4F34-AD44-918965CFB289}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataGraph.Data", "DataGraph.Data\DataGraph.Data.csproj", "{A2E3A5F0-142B-4B91-9B62-8A4D7C371E46}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataGraph.Domain", "DataGraph.Domain\DataGraph.Domain.csproj", "{A03BD2FE-51CA-40DC-9EBA-B02215E9A9E0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataGraph.Web", "DataGraph.Web\DataGraph.Web.csproj", "{77DF5C9D-C426-440F-AFED-383F989CABBD}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B140E658-5173-4F34-AD44-918965CFB289}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B140E658-5173-4F34-AD44-918965CFB289}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B140E658-5173-4F34-AD44-918965CFB289}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B140E658-5173-4F34-AD44-918965CFB289}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A2E3A5F0-142B-4B91-9B62-8A4D7C371E46}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A2E3A5F0-142B-4B91-9B62-8A4D7C371E46}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A2E3A5F0-142B-4B91-9B62-8A4D7C371E46}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A2E3A5F0-142B-4B91-9B62-8A4D7C371E46}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A03BD2FE-51CA-40DC-9EBA-B02215E9A9E0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A03BD2FE-51CA-40DC-9EBA-B02215E9A9E0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A03BD2FE-51CA-40DC-9EBA-B02215E9A9E0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A03BD2FE-51CA-40DC-9EBA-B02215E9A9E0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{77DF5C9D-C426-440F-AFED-383F989CABBD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{77DF5C9D-C426-440F-AFED-383F989CABBD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{77DF5C9D-C426-440F-AFED-383F989CABBD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{77DF5C9D-C426-440F-AFED-383F989CABBD}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal

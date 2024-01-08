@@ -1,0 +1,11 @@
+* {
+    font-family: cursive;
+    font-size: 18px;
+}
+
+.full-screen {
+    display: block;
+    height: 100vh;
+    width: 100vw;
+}
+
