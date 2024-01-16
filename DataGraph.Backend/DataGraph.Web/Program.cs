@@ -1,4 +1,3 @@
-using DataGraph.Data;
 using DataGraph.Web.Extensions;
 
 
@@ -13,7 +12,6 @@ builder.Services.AddHttpsRedirection(options =>
 
 // Add services to the container.
 
-builder.AddDataContext();
 builder.AddNonDataService();
 
 builder.Services.AddControllers();
@@ -35,7 +33,5 @@ app.UseCors(cpb => cpb.AllowAnyOrigin().AllowAnyMethod().AllowAnyHeader());
 app.UseRequestTimeLogMiddleware();
 
 app.MapControllers();
-
-app.MigrateDbContext<DataContext>();
 
 app.Run();

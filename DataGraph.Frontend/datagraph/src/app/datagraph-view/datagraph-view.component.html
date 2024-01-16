@@ -1,8 +1,15 @@
-<app-datagraph-node 
-    *ngFor="let node of dataScheme.nodes; let $last = last; index as i" 
-    [node]="node" 
-    [isLast]="$last" 
-    (norifyLastInit)="refreshDraggableElements();"
-    [ngStyle]="{'position':'absolute'}"
-    [style.top.px]="(marginTop + (i*100))"
-    [style.left.px]="(innerWidth / 4) + ((i % 2) * 500)"/>
+<div class="input-container" id="input-container">
+    <input #connectionString placeholder="Connection String"/>
+    <button (click)="buildDataGraph(connectionString.value)">Build Data Graph</button>
+    <button (click)="exportToPdf()">Export To PDF</button>
+</div>
+<div id="graph">
+    <app-datagraph-node 
+        *ngFor="let node of dataScheme.nodes; let $last = last; index as i" 
+        [node]="node" 
+        [isLast]="$last" 
+        (norifyLastInit)="refreshDraggableElements();"
+        [ngStyle]="{'position':'absolute'}"
+        [style.top.px]="(marginTop + (i*100))"
+        [style.left.px]="(innerWidth / 4) + ((i % 2) * 500)"/>
+</div>

@@ -1,8 +1,8 @@
-﻿using Microsoft.EntityFrameworkCore.Metadata;
+﻿using DataGraph.Core.Models.DataScheme.DTOs;
 
 namespace DataGraph.Core;
 
 public interface IDataSchemeProvider
 {
-    List<IEntityType> GetEntities();
+    Task<DataScheme> GetEntitiesSchemeAsync(string connectionString);
 }

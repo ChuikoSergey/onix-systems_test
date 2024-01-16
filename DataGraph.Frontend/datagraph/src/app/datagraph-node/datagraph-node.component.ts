@@ -1,5 +1,5 @@
 import { Component, Input, Output, EventEmitter } from '@angular/core';
-import { DataSchemeNodeDto } from 'src/model/data-scheme/dataSchemeNodeDto';
+import { DataSchemeNodeDto } from 'src/model/data-scheme/dtos/dataSchemeNodeDto';
 
 @Component({
   selector: 'app-datagraph-node',

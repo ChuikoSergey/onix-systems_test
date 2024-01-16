@@ -29,7 +29,7 @@
             ],
             "scripts": [ 
               "node_modules/leader-line/leader-line.min.js",
-              "node_modules/plain-draggable/plain-draggable.min.js",
+              "node_modules/plain-draggable/plain-draggable.min.js"
             ]
           },
           "configurations": {

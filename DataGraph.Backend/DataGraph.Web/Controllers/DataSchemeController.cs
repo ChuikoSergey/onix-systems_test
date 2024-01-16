@@ -1,4 +1,5 @@
-﻿using DataGraph.Core.Services.DataScheme;
+﻿using DataGraph.Core.Models.DataScheme.Requests;
+using DataGraph.Core.Services.DataScheme;
 using Microsoft.AspNetCore.Mvc;
 
 namespace DataGraph.Web;
@@ -6,7 +7,7 @@ namespace DataGraph.Web;
 [Route("api/[controller]")]
 public class DataSchemeController : ControllerBase
 {
-    [HttpGet]
-    public IActionResult GetDataScheme([FromServices] IDataSchemaService dataSchemaService) 
-        => Ok(dataSchemaService.GetDataScheme());
+    [HttpPost("getScheme")]
+    public async Task<IActionResult> GetDataSchemeAsync([FromBody] GetDataSchemeRequest request, [FromServices] IDataSchemaService dataSchemaService) 
+        => Ok(await dataSchemaService.GetDataSchemeAsync(request.ConnectionString));
 }
