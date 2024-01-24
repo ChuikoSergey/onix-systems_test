@@ -1,4 +1,4 @@
-﻿namespace DataGraph.Core.Models.DataScheme;
+﻿namespace DataGraph.Core.Models.DataScheme.DTOs;
 
 public class DataSchemeBranch
 {

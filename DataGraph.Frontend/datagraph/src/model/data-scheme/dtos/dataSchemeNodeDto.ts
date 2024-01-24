@@ -1,6 +1,6 @@
 export class DataSchemeNodeDto {
     public name! : string;
-    public primaryKeyName! : string;
+    public primaryKeyFields? : string[] | undefined;
     public foreignKeyFields? : string[] | undefined;
 
     constructor(init?:Partial<DataSchemeNodeDto>) {
